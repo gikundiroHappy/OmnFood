@@ -84,6 +84,10 @@ button {
   border-radius: 10px;
   background-color: orange;
 }
+button a {
+  text-decoration: none;
+  color: black;
+}
 .day-per-day {
   display: flex;
   justify-content: space-around;
@@ -385,6 +389,23 @@ button {
   height: 70vh;
   padding-left: 20px;
 }
+/* #video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (min-aspect-ratio: 16/9) {
+  #video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: auto;
+    height: 100%;
+  }
+} */
 .chic {
   padding: 30px;
 }
