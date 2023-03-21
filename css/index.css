@@ -75,6 +75,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 .button {
   margin-left: 60px;
@@ -114,8 +115,9 @@ button a {
 
 #product {
   width: 100%;
-  padding: 10px 0px 10px 98px;
+  padding: 10px 0px 10px 100px;
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -127,17 +129,18 @@ button a {
   margin: 5px;
 }
 .product-detail:hover {
-  transform: translateY(2px);
+  transform: translateY(10px);
   box-shadow: 2px 2px 1px 1px rgb(169, 168, 168);
 }
 .product-detail h2 {
   padding-top: 10px;
   text-align: center;
   font-weight: bold;
+  color: orange;
 }
 .product-detail img {
-  padding-left: 40px;
-  padding-right: 20px;
+  border-radius: 0px 0px 30px 0px;
+  object-fit: cover;
 }
 .product-detail p {
   padding: 10px;
@@ -244,7 +247,6 @@ button a {
 
 .all-page {
   background-image: url(../Images/wallper.webp);
-  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -256,20 +258,27 @@ button a {
   display: flex;
   margin-left: 23%;
 }
-/* .left {
-  
-} */
-.left img {
-  position: relative;
-  width: 100%;
+.left {
+  background-image: url(../Images/wallper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
   height: 70vh;
-  opacity: 0.8;
+  width: 40%;
+  /* opacity: 0.8; */
+}
+#icons {
+  padding-top: 150px;
+  text-align: center;
 }
 #icons .icons-ic i {
-  margin-left: 30px;
-  margin-top: -400px;
-  /* font-size: 30px; */
-  /* position: absolute; */
+  font-size: 20px;
+  background-color: rgb(226, 225, 225);
+  border-radius: 50%;
+  padding: 7px;
+}
+#icons .icons-ic i:hover {
+  background-color: gray;
 }
 
 .right {
@@ -380,6 +389,7 @@ button a {
   height: 150px;
   border-radius: 50%;
   border: 3px solid orange;
+  object-fit: cover;
 }
 .service-one h2 {
   background-color: orange;
