@@ -46,6 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 72px;
+  padding-left: 80px;
 }
 .container-part1 {
   width: 45%;
@@ -69,7 +70,8 @@ body {
 .container-part2 {
   width: 45%;
   height: 73vh;
-  background-image: url(../Images/test.webp);
+  margin-right: 80px;
+  background-image: url(../Images/bug-removebg-preview.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,11 +80,12 @@ body {
   margin-left: 60px;
 }
 button {
-  padding: 15px;
+  padding: 9px;
   border: none;
-  font-size: 20px;
+  font-size: 17px;
   border-radius: 10px;
-  background-color: orange;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  height: 40px;
 }
 button a {
   text-decoration: none;
@@ -234,14 +237,14 @@ button a {
   line-height: 20px;
   color: black;
 }
-.log a:hover {
+.sign {
   color: orange;
 }
-
 /* My contact page */
 
 .all-page {
   background-image: url(../Images/wallper.webp);
+  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -253,11 +256,22 @@ button a {
   display: flex;
   margin-left: 23%;
 }
+/* .left {
+  
+} */
 .left img {
-  position: center;
+  position: relative;
   width: 100%;
   height: 70vh;
+  opacity: 0.8;
 }
+#icons .icons-ic i {
+  margin-left: 30px;
+  margin-top: -400px;
+  /* font-size: 30px; */
+  /* position: absolute; */
+}
+
 .right {
   background-color: white;
   width: 40%;
@@ -357,14 +371,19 @@ button a {
   text-align: center;
   padding: 10px;
 }
+.service-one:hover {
+  transform: translateY(2px);
+  box-shadow: 2px 2px 2px 2px rgb(169, 168, 168);
+}
 .service-one img {
   width: 200px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid orange;
+  border: 3px solid orange;
 }
 .service-one h2 {
   background-color: orange;
+  opacity: 0.8;
   margin: 5px;
   padding: 7px 20px;
   height: 40px;
@@ -419,4 +438,35 @@ button a {
 }
 .chic button {
   margin-top: 60px;
+}
+
+/* My Order Page */
+
+.order-page {
+  padding: 20px 70px 70px 70px;
+  display: flex;
+  gap: 40px;
+}
+.form-page {
+  display: flex;
+  gap: 20px;
+  padding-top: 70px;
+}
+.form-page input {
+  padding: 7px;
+  width: 320px;
+  outline: none;
+  background-color: rgb(224, 221, 221);
+  border: none;
+  color: black;
+  font-size: 0.9rem;
+}
+#order-page {
+  padding-top: 120px;
+}
+#order-page h1 {
+  text-align: center;
+}
+#order-page h1 span {
+  color: orange;
 }
