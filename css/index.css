@@ -397,9 +397,62 @@ button a {
   width: 100%;
   height: 90vh;
 }
-.team-page .team-box .profile img {
-  width: 150px;
+.team-page .team-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13%;
 }
+.team-page .team-box .profile {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px gray;
+  transition: 0.4s;
+}
+.team-page .team-box .profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+.team-page .team-box .profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px gray;
+  z-index: 2;
+  transition: 0.4s;
+}
+.team-page .team-box .profile:hover img {
+  border-radius: 20px;
+  margin-top: -230px;
+}
+.team-page .team-box .profile .team-info {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  transition: 0.4s;
+}
+.team-page .team-box .profile .team-info .name {
+  color: orange;
+  margin-bottom: 15px;
+}
+.team-page .team-box .profile .team-info .bio {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
 /* My services */
 
 .service-page {
