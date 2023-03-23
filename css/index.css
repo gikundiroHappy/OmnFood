@@ -608,6 +608,13 @@ button a {
 #order-page h1 span {
   color: orange;
 }
+#order-page button {
+  margin-left: 560px;
+  margin-top: -250px;
+  position: absolute;
+}
+
+/* responsiveness  */
 @media screen and (max-width: 800px) {
   .nav-bar {
     display: block;
@@ -627,9 +634,9 @@ button a {
     padding-left: 0px;
   }
   .container-part2 {
-    height: 600px;
-    width: 220px;
-    margin-right: 200px;
+    height: 650px;
+    width: 350px;
+    margin-right: 80px;
   }
   .button .view-more1 {
     margin-left: -33px;
@@ -639,14 +646,115 @@ button a {
     margin-left: 10px;
   }
   .product-one img {
-    width: 300px;
-    height: 380px;
+    width: 360px;
+    height: 500px;
+    margin-top: 100px;
   }
-  /* .product-one h2,
-  p {
-    
-  } */
   .day-per-day {
-    padding-left: 0px;
+    margin-left: 25px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product-detail {
+    width: 40%;
+  }
+
+  /* service page */
+
+  .service-page {
+    padding-top: 100px;
+    margin-left: -18px;
+    margin-right: 0px;
+    width: 100%;
+    gap: 0px;
+  }
+  .all {
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  /* About page */
+
+  .about-page {
+    padding-top: 220px;
+    margin-left: -120px;
+  }
+  .part-two {
+    margin-right: 0px;
+    margin-left: 110px;
+  }
+  .part-two button {
+    width: 150px;
+    margin-top: -60px;
+  }
+  .team-page .team-box .profile {
+    margin-left: 100px;
+  }
+  .all-page {
+    padding-top: 200px;
+  }
+  .contact-us {
+    margin-left: 100px;
+  }
+  .left {
+    width: 40%;
+    height: 50vh;
+  }
+  .right {
+    width: 50%;
+    height: 50vh;
+  }
+  .right input {
+    font-size: 20px;
+  }
+  .right textarea {
+    font-size: 20px;
+  }
+
+  /* login page  */
+
+  .log-page {
+    padding-top: 250px;
+  }
+  .log {
+    width: 50%;
+    height: 50vh;
+  }
+  .log input {
+    font-size: 20px;
+  }
+  .log h5 {
+    font-size: 20px;
+  }
+  .log a {
+    font-size: 20px;
+  }
+
+  /* Order page  */
+
+  #order-page {
+    padding-top: 300px;
+    margin-left: -110px;
+  }
+  .form-page {
+    display: block;
+  }
+  #order-page button {
+    margin-top: -40px;
+  }
+  .form-page {
+    margin-left: -30px;
+    padding-top: 20px;
+  }
+  .form-page input {
+    font-size: 20px;
+  }
+  .form-page label {
+    font-size: 20px;
   }
 }
