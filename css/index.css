@@ -534,18 +534,23 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black;
+  background-color: black;
+  /* height: 50vh; */
+}
+.all .both .front:hover img {
+  opacity: 0.4;
 }
 .all .both .front img {
   width: 100%;
   object-fit: cover;
   transition: 03s;
+  background-color: black;
 }
 .all .both .front h3 {
   position: absolute;
   font-size: 35px;
   margin-bottom: 130px;
-  color: black;
+  color: orange;
   font-weight: bold;
   /* font-family: mv poli; */
   z-index: 5;
@@ -560,7 +565,7 @@ button a {
   width: 400px;
   margin-top: 30px;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 25px;
   line-height: 22px;
   opacity: 0;
@@ -671,16 +676,17 @@ button a {
 @media screen and (max-width: 800px) {
   .nav-bar {
     display: block;
-    height: 21vh;
+    height: 18vh;
   }
   .nav-bar .logo img {
-    width: 15%;
-    height: 9vh;
+    width: 20%;
+    height: 12vh;
+    margin-left: 280px;
   }
   .nav-bar ul {
-    display: block;
     padding-left: 40px;
     margin-top: 0px;
+    font-size: 25px;
   }
   .container {
     padding-top: 215px;
@@ -716,6 +722,12 @@ button a {
   .product-detail {
     width: 40%;
   }
+  .all-products {
+    padding-top: 90px;
+  }
+  .product-detail img {
+    border-radius: 0px 0px 50px 0px;
+  }
 
   /* service page */
 
@@ -728,7 +740,21 @@ button a {
   }
   .all {
     margin-left: 15px;
+
     width: 90%;
+  }
+  .both {
+    align-items: center;
+  }
+  .team-page .team-box {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .team-page .team-box .profile {
+    margin-bottom: 20px;
+  }
+  .team-page .team-box .profile img {
+    z-index: 0;
   }
 
   /* About page */
